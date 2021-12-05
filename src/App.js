@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div>
         <div className='head'>
-          <h2>Live Face Recognition run on the Web</h2>
+          <h2>Mansea</h2>
         </div>
         <WebcamCapture/>
       </div>
