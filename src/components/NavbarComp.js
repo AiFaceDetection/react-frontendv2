@@ -19,7 +19,6 @@ export default class NavbarComp extends Component {
             <Navbar.Brand href="#home">Face Recognition</Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
-              <Nav.Link as={Link} to={"/register"}>Register</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
@@ -27,7 +26,6 @@ export default class NavbarComp extends Component {
       <div>
       <Routes>
           <Route exact path="/" element={<Homepage/>}/>
-          <Route exact path="/register" element={<Register/>}/>
         </Routes>
       </div>
       </Router>
