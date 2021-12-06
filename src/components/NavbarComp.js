@@ -1,21 +1,36 @@
 import React, { Component } from "react";
-import {Navbar, Nav, Button, Container} from 'react-bootstrap';
+import { Navbar, Nav, Container } from "react-bootstrap";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Homepage from "./Homepage";
+import Register from "./Register";
 
 export default class NavbarComp extends Component {
   render() {
     return (
+      <Router>
       <div>
         <Navbar bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+            <Navbar.Brand href="#home">Face Recognition</Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
+              <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
+              <Nav.Link as={Link} to={"/register"}>Register</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
       </div>
+      <div>
+      <Routes>
+          <Route exact path="/" element={<Homepage/>}/>
+          <Route exact path="/register" element={<Register/>}/>
+        </Routes>
+      </div>
+      </Router>
     );
   }
 }

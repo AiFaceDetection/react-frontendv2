@@ -1,0 +1,27 @@
+
+.identifyBtn {
+    background: rgb(65, 65, 65);
+    color: white;
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 rgba(31, 31, 31, 0);
+    transition: 0.5s;
+    border: 1px solid rgb(168, 168, 168);
+    margin: 1rem;
+  }
+  
+  .identifyBtn:hover {
+    box-shadow: 3px 3px 3px 1px #1a1a1a;
+    background: white;
+    color: black;
+    transition: 0.5s;
+  }
+
+h2 {
+  text-align: left;
+}
